@@ -1,0 +1,57 @@
+.color-format-picker-cant {
+  position: relative;
+}
+.color-format-text {
+  padding: 5px 18px;
+  background-color: #1e272e;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.color-format-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.color-format-picker-box {
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
+  background-color: whitesmoke;
+  border-radius: 3px;
+  overflow: hidden;
+  animation: openColorPicker 0.2s ease-in-out forwards;
+  -webkit-animation: openColorPicker 0.2s ease-in-out forwards;
+}
+@keyframes openColorPicker {
+  from {
+    opacity: 0;
+    top: 30px;
+  }
+
+  to {
+    opacity: 1;
+    top: 100px;
+  }
+}
+.color-format-picker-box button {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.color-format-picker-box button:hover {
+  background-color: #1e272e;
+  color: white;
+}

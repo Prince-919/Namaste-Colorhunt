@@ -1,0 +1,11 @@
+.page-container {
+  height: calc(100vh - 100px);
+  overflow: hidden;
+  overflow-y: auto;
+}
+.siteWrapper {
+  background-image: url("../../assets/img/Fluid.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}

@@ -1,0 +1,27 @@
+.card {
+  padding: 9px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.card-colors {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(54px, 54px));
+}
+.card-color {
+  width: 54px;
+  height: 36px;
+}
+.card-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 9px;
+}
+.card-title {
+  font-weight: 500;
+}
+.card-code {
+  font-weight: 600;
+  color: #353b48;
+}
